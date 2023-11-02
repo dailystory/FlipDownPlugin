@@ -1,12 +1,13 @@
 <?php
 /*
 Plugin Name: FlipDown Countdown Timer
-Plugin URI: https://docs.dailystory.com/article/8omibw2171-integrations-wordpress
-Description: Insert a FlipDown countdown timer in WordPress pages or posts
 Version: 0.0.5
+Plugin URI: https://github.com/dailystory/FlipDownPlugin
+Description: Insert a FlipDown countdown timer into your WordPress pages or posts
 Author: DailyStory
-Author URI: https://www.dailystory.com/integrations/wordpress/
+Author URI: https://www.dailystory.com/
 License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Do not allow direct access

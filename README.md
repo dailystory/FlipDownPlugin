@@ -3,6 +3,8 @@ This WordPress plugin by [DailyStory](https://www.dailystory.com/) enables users
 
 The source code [published on the WordPress Plugin directory](https://wordpress.org/plugins/dailystory/#description) and you can [read more about DailyStory WordPress integration here](https://www.dailystory.com/wordpress/). 
 
+The FlipDown plugin uses the [FlipDown JS library](https://github.com/PButcher/flipdown). 
+
 ## Current Supported Version
 version 0.0.1, Updated November 2023
 
