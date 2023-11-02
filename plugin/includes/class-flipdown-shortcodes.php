@@ -26,6 +26,10 @@ class FlipDownShortCodes {
 		wp_register_script('flipdown', 'https://cdn.jsdelivr.net/npm/flipdown@0.3.2/src/flipdown.min.js', null,FLIPDOWN_PLUGIN_VERSION, true);
 		wp_enqueue_script('flipdown');
 
+		// Add the script reference, pulled from DailyStory, but eventually will be served from a CDN
+		wp_register_script('flipdown_loader', 'https://cdn.jsdelivr.net/gh/dailystory/FlipDownPlugin@main/script/flipdown-for-wordpress.js', null,FLIPDOWN_PLUGIN_VERSION, true);
+		wp_enqueue_script('flipdown_loader');
+
 		// enqueue css
 		wp_enqueue_style('flipdown','https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css', null, FLIPDOWN_PLUGIN_VERSION, 'all');
 
