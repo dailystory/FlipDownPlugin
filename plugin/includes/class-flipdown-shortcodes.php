@@ -1,0 +1,35 @@
+<?php
+// ──────────────────────────────────────────────
+// This class manages all the shortcodes, such as [flipdown]
+// ──────────────────────────────────────────────
+class FlipDownShortCodes {
+	
+    function __construct () {
+		// Add the [flipdown] shortcode
+		add_shortcode('flipdown', array( 'FlipdownShortCodes', 'dailystory_flipdown_shortcode' ));
+	}
+
+	// ──────────────────────────────────────────────
+	// Routine for [flipdown date="2023-09-20T12:00:00-0500"] shortcode, this shortcode returns
+	// the HTML for a <div> inline within a WordPress page / post where the shortcode
+	// was inserted
+	// ──────────────────────────────────────────────
+	public static function dailystory_flipdown_shortcode($atts, $content=null) {
+    	// normalize attribute keys, lowercase
+    	$atts = array_change_key_case((array)$atts, CASE_LOWER);
+ 
+    	// parse out the date property
+    	$flipdown_date = shortcode_atts(['date' => '0',], $atts, $tag);
+		$flipdown_date = esc_html__($flipdown_date['date'], 'ds-webform');
+
+		// Add the script reference, pulled from DailyStory, but eventually will be served from a CDN
+		wp_register_script('flipdown', 'https://cdn.jsdelivr.net/npm/flipdown@0.3.2/src/flipdown.min.js', null,FLIPDOWN_PLUGIN_VERSION, true);
+		wp_enqueue_script('flipdown');
+
+		// enqueue css
+		wp_enqueue_style('flipdown','https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css', null, FLIPDOWN_PLUGIN_VERSION, 'all');
+
+		return '<div id="flipdown" class="flipdown" data-date="' . $flipdown_date .'" style="display:inline-block"></div>';
+	}    
+}
+?>
