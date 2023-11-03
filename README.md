@@ -12,7 +12,7 @@ The FlipDown plugin makes use of a WordPress shortcode. Simply add the shortcode
 
 The data should be in the format of a JavaScript ISO date with the offset for your location. The above example creates a countdown timer for Cyber Monday on November 27, 2023.
 
-It's worth mentioning that the date should includes zeros for months less than 10 and times less than 10. 
+***Important:*** both month and day should be expressed using 2 numbers.
 
 For example, August 7th would be written as 2023-08-07.
 
