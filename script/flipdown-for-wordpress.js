@@ -13,7 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
         let dataset_date = elem.dataset.date;
         const theme = elem.dataset.theme ?? 'dark';
 
-        let unix_timestamp = dateToUnixTimestamp(new Date(dataset_date));
+        let date = new Date(dataset_date);
+
+        if (!isValidDate(date))
+        {
+            console.warn('Invalid date in FlipDown countdown');
+            continue;
+        }
+
+        let unix_timestamp = dateToUnixTimestamp(date);
 
         new FlipDown(unix_timestamp, {
             theme: theme
@@ -27,5 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const unix_timestamp = Math.floor(date.getTime() / 1000);
 
         return Number(unix_timestamp);
+    }
+
+    function isValidDate(d) {
+        return d instanceof Date && !isNaN(d);
     }
 });

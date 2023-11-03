@@ -19,12 +19,12 @@ class FlipDownShortCodes {
     	$atts = array_change_key_case((array)$atts, CASE_LOWER);
  
     	// parse out the date property
-    	$flipdown_date = shortcode_atts(['date' => '0',], $atts, $tag);
-		$flipdown_date = esc_html__($flipdown_date['date'], '');
+    	$flipdown_date = shortcode_atts(['date' => '',], $atts, $tag);
+		$flipdown_date = esc_html__($flipdown_date['date']);
 
 		// parse out the theme property
-    	$flipdown_theme = shortcode_atts(['theme' => '1',], $atts, $tag);
-		$flipdown_theme = esc_html__($flipdown_theme['theme'], 'dark');
+    	$flipdown_theme = shortcode_atts(['theme' => 'dark',], $atts, $tag);
+		$flipdown_theme = esc_html__($flipdown_theme['theme']);
 
 		// Add the script reference, pulled from DailyStory, but eventually will be served from a CDN
 		wp_register_script('flipdown', 'https://cdn.jsdelivr.net/npm/flipdown@0.3.2/src/flipdown.min.js', null,FLIPDOWN_PLUGIN_VERSION, true);
