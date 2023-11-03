@@ -20,7 +20,11 @@ class FlipDownShortCodes {
  
     	// parse out the date property
     	$flipdown_date = shortcode_atts(['date' => '0',], $atts, $tag);
-		$flipdown_date = esc_html__($flipdown_date['date'], 'ds-webform');
+		$flipdown_date = esc_html__($flipdown_date['date'], '');
+
+		// parse out the theme property
+    	$flipdown_theme = shortcode_atts(['theme' => '1',], $atts, $tag);
+		$flipdown_theme = esc_html__($flipdown_theme['theme'], 'dark');
 
 		// Add the script reference, pulled from DailyStory, but eventually will be served from a CDN
 		wp_register_script('flipdown', 'https://cdn.jsdelivr.net/npm/flipdown@0.3.2/src/flipdown.min.js', null,FLIPDOWN_PLUGIN_VERSION, true);
@@ -33,7 +37,7 @@ class FlipDownShortCodes {
 		// enqueue css
 		wp_enqueue_style('flipdown','https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css', null, FLIPDOWN_PLUGIN_VERSION, 'all');
 
-		return '<div id="flipdown" class="flipdown" data-date="' . $flipdown_date .'" style="display:inline-block"></div>';
+		return '<div id="flipdown" class="flipdown" data-date="' . $flipdown_date .'" data-theme="' . $flipdown_theme . '" style="display:inline-block"></div>';
 	}    
 }
 ?>
