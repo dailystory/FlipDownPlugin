@@ -47,11 +47,10 @@ The FlipDown plugin uses the [FlipDown JS library](https://github.com/PButcher/f
 ### Where can I get support?
 For technical questions, please visit Stack Overflow’s [DailyStory tag](http://stackoverflow.com/). For all other questions, [please contact us](https://www.dailystory.com/contact-us/).
 
-We recommend using WordPress version 4.0 or greater, but we've tested up to version 6.1.
+We recommend using WordPress version 4.0 or greater, but we've tested up to version 6.3.
 
 ## Screenshots
-1. **Set DailyStory Site ID** - After the plugin is installed and activated, set your DailyStory Site ID and click "Save Settings".
-2. **Web Form Designer** - Design web forms within DailyStory and then use WordPress shortcodes to easily embed them in your WordPress site.
+1. **Flip Down** - Example of FlipDown embedded in content.
 
 ## Changelog
 
