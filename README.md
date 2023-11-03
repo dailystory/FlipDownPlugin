@@ -16,6 +16,8 @@ It's worth mentioning that the date should includes zeros for months less than 1
 
 For example, August 7th would be written as 2023-08-07.
 
+`[flipdown date="2027-08-07T00:00:00-0500"]`
+
 ## Current Supported Version
 version 0.0.1, Updated November 2023
 
