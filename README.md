@@ -8,13 +8,15 @@ The FlipDown plugin uses the [FlipDown JS library](https://github.com/PButcher/f
 ## How to use the plugin
 The FlipDown plugin makes use of a WordPress shortcode. Simply add the shortcode within your WordPress page or post using the following syntax:
 
-[flipdown date="2023-11-27T00:00:00-0500"]
+`[flipdown date="2023-11-27T00:00:00-0500"]`
 
 The data should be in the format of a JavaScript ISO date with the offset for your location. The above example creates a countdown timer for Cyber Monday on November 27, 2023.
 
-It's worth mentioning that the date should includes zeros for months less than 10 and times less than 10. 
+***Important:*** both month and day should be expressed using 2 numbers.
 
 For example, August 7th would be written as 2023-08-07.
+
+`[flipdown date="2027-08-07T00:00:00-0500"]`
 
 ## Current Supported Version
 version 0.0.1, Updated November 2023
