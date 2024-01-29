@@ -3,17 +3,26 @@ Contributors: dailystory, roberthoward
 Tags: marketing, sales, automation
 Requires at least: 4.0
 Tested up to: 6.3
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 License: GNU General Public License v2.0 or later
 
 The Countdown Timer is a WordPress plugin that makes it simple to add a countdown timer to your pages or posts.
 
+### BACKED BY A TRUSTED TEAM
 The plugin is built and maintained by [DailyStory](https://www.dailystory.com/), a marketing automation platform. This plugin was created after several of our customers asked how they could create a similar plugin for their WordPress websites.
+
+### DOCUMENTATION AND SUPPORT
+For documentation and tutorials go to our [documentation](https://github.com/dailystory/FlipDownPlugin/).
+To report issue and contribution visit [Github[(https://github.com/dailystory/FlipDownPlugin/).
 
 ## How to use the plugin
 The FlipDown plugin makes use of a WordPress shortcode. Simply add the shortcode within your WordPress page or post using the following syntax:
 
 [[flipdown date="2023-11-27T00:00:00-0500"]]
+
+You can also change the theme from dark (default) to light:
+
+[[flipdown date="2023-11-27T00:00:00-0500" theme="light"]]
 
 The data should be in the format of a JavaScript ISO date with the offset for your location. The above example creates a countdown timer for Cyber Monday on November 27, 2023.
 
@@ -54,5 +63,8 @@ We recommend using WordPress version 4.0 or greater, but we've tested up to vers
 
 ## Changelog
 
-### 1.0.0
+### 0.0.2
+* Update to include all Flipdown files and changes for WordPress submission
+
+### 0.0.1
 * Initial release for submission to WordPress plugins
