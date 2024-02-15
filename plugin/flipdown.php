@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: FlipDown Countdown Timer
- * Version: 0.0.2
+ * Version: 1.0.0
  * Plugin URI: https://github.com/dailystory/FlipDownPlugin
  * Description: Insert a FlipDown countdown timer into your WordPress pages or posts.
  * Author: DailyStory
