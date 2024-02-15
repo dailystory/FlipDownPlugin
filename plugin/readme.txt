@@ -1,6 +1,6 @@
 # Countdown Timer for WordPress
 Contributors: dailystory, roberthoward
-Tags: marketing, sales, automation
+Tags: marketing, clocks, timers, countdown, countdown timer, countdown generator
 Requires at least: 4.0
 Tested up to: 6.3
 Stable tag: 1.0.0
