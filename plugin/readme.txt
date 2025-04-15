@@ -63,6 +63,9 @@ We recommend using WordPress version 4.0 or greater, but we've tested up to vers
 
 ## Changelog
 
+### 1.0.1
+* Update to latest version of WordPress
+
 ### 0.0.2
 * Update to include all Flipdown files and changes for WordPress submission
 
