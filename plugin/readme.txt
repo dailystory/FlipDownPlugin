@@ -2,8 +2,8 @@
 Contributors: dailystory, roberthoward
 Tags: marketing, clocks, timers, countdown, countdown timer, countdown generator
 Requires at least: 4.0
-Tested up to: 6.3
-Stable tag: 1.0.0
+Tested up to: 6.7
+Stable tag: 1.0.1
 License: GNU General Public License v2.0 or later
 
 The Countdown Timer is a WordPress plugin that makes it simple to add a countdown timer to your pages or posts.
